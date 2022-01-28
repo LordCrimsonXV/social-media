@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    /* color: white; */
+}
+/* ---------------dark mode------------ */
+
+
+:root{
+    --body-color: #efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;  
+}
+.dark-theme{
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}
+
+
+
+body {
+    background-color: #1E1B34;
+    transition: background 0.3s;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5c0000;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    width: 160px;
+    margin-right: 45px;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li img{
+    width: 24px;
+    margin: 0 15px;
+}
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-user-icon{
+    margin-left: 30px;
+}
+.search-box{
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.search-box img{
+    width: 18px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.container{
+    padding: 13px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content{
+    /* background: #cbdffa; */
+    flex-basis: 47%;
+}
+
+/* ------------------ main content ------------- */
+
+
+/* ------------write  --------- */
+.post-input-container{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+.user-profile small{
+    font-size: 12px;
+}
+
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+    background: transparent;
+    color: black;
+}
+.post-add{
+    display: flex;
+    margin-top: 10px;
+}
+.post-add a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+.post-add a img{
+    width: 20px;
+    margin-right: 10px;
+}
+/* -------post list------- */
+
+
+.post-container{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.date{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-row a{
+    color: #9a9a9a;
+}
+
+.post-text{
+    color: black;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.post-text a{
+        color:blue;
+    text-decoration: none;
+    font-size:15px;
+}
+.post-img{
+    width: 100%;
+    border-radius: 4px;
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+.post-icons div img{
+    width: 18px;
+    margin-right: 10px;
+}
+.post-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    color:black;
+}
+
+.load-more-btn{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+}
+
+
+/* -------- profile page --------- */
+.profile-container{
+    padding: 20px 15%;
+    color: #626262;
+    margin-bottom: 1;
+}
+.cover-img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.profile-details{
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.pd-row{
+    display: flex;
+    align-items: flex-start;
+}
+.pd-image{
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+.pd-row div h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.pd-row div p{
+    font-size: 13px;
+}
+.pd-right button img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+.pd-right{
+    text-align: right;
+}
+.pd-right a{
+    background: #e4e6eb;
+    border-radius: 3px;
+    padding: 12px;
+    display: inline-flex;
+    /* margin-top: 30px; */
+}
+.pd-right a img{
+    width: 20px;
+}
+.profile-info{
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.info-col{
+    flex-basis: 33%;
+}
+.post-col{
+    flex-basis: 65%;
+}
+.profile-intro{
+    background: var(--bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.profile-intro h3{
+    font-weight: 600;
+}
+.intro-text{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.intro-text img{
+    width: 15px;
+    margin-bottom: -3px;
+}
+.profile-intro hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+.profile-intro ul li{
+    margin-left:  16px;
+    font-size: 15px;
+    margin: 15px 0;
+    display: list-item;
+    align-items: center;
+}
+.profile-intro ul li img{
+    width: 26px;
+    margin-right: 10px;
+}
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-box a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 14px;
+}
+.photo-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.photo-box div img{
+    width: 100%;
+    cursor: pointer;
+}
+.profile-intro p{
+    font-size: 14px;
+}
+.friends-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+.friends-box div img{
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.friends-box div{
+    position: relative;
+}
+
+.friends-box p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* ---------------- home page media query ---------- */
+
+@media (max-width:900px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .post-add{
+        flex-wrap: wrap;
+    }
+    .main-content{
+        flex-basis: 100%;
+    }
+    .logo{
+        width: 110px;
+        margin-right: 20px;
+    }
+    .search-box{
+        display: none;
+    }
+    .nav-left ul li img{
+        width: 20px;
+        margin: 0 8px;
+    }
+    .nav-user-icon img{
+        width: 30px;
+    }
+    .nav-user-icon{
+        margin-left: 0;
+    }
+
+    .post-input-container{
+        padding-left: 0;
+    }
+    .post-add a{
+        margin-right: 12px;
+        font-size: 9px;
+    }
+    .post-add a img {
+        width: 16px;
+        margin-right: 5px;
+    }
+}
+
+
+/* ---------------- profile page media query ---------- */
+
+@media (max-width:900px){
+    .profile-details{
+        flex-wrap: wrap;
+    }
+    .profile-info{
+        flex-wrap: wrap;
+    }
+
+    .profile-container{
+        padding: 20px 5%;
+    }
+    .pd-row div h3{
+        font-size: 16px;
+    }
+    .pd-right{
+        margin-top: 15px;
+        text-align: left;
+    }
+    .pd-right button{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .info-col{
+        flex-basis: 100%;
+    }
+    .post-col{
+        flex-basis: 100%;
+    }
+}
+
+.footer {
+    margin-top:20mm;
+    padding: 40px 0;
+    background-color: #815151a9;
+    color:white;
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer li {
+    padding: 0 10px;
+    display:inline;
+  }
+  
+  .footer ul a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .footer img{
+      width:30%;
+  }
+  
+  .footer .social > a {
+    line-height: 40px;
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  
+  .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
